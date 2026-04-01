@@ -1,0 +1,68 @@
+show databases;
+
+create database HIT;
+
+use HIT;
+show databases;
+
+show tables;
+
+CREATE TABLE Persons (
+  PersonID int PRIMARY KEY,
+  LastName varchar(255) NOT NULL,
+  FirstName varchar(255),
+  Address varchar(255),
+  City varchar(255)
+);
+ show tables;
+ 
+ desc persons; 
+ 
+insert into Persons values
+(1,"Ghasti","Basavaraj","Nidasoshi","Belagavi"),
+(2,"Nagannavar","Basavaraj","Gotur","Belagavi"),
+(3,"Patil","Akash","Nidasoshi","Belagavi"),
+(4,"Gayakawad","Amar","Athani","Belagavi");
+
+select * from persons;
+
+select abs(-44) from dual;
+
+select pow(2,4) from dual;
+
+select sqrt(16) from dual;
+
+select exp(4) from dual;
+
+select greatest(1,2,3,5,6,8,9) from dual;
+
+SELECT least(3, 12, 34, 8, 25) from dual;
+
+select round(4.7) from dual;
+
+select round(4.4) from dual;
+
+select mod(8,3) from dual;
+
+select lower('HELP4CODE ELEARNING') from dual;
+
+select upper('amar gayakawad') from dual;
+
+select lpad('Help4code',15,'#') from dual;
+
+select rpad('Help4code',15,'#') from dual;
+
+select length('Help4code elearing') from dual;
+
+select concat('Help4code', 'elearing') from dual;
+
+select ascii('A') from dual;
+
+select 30 + 20 from dual;
+
+select 30 - 20 from dual;
+
+select * from persons where address = "Nidasoshi";
+
+select * from persons where city = "Belagavi";
+
